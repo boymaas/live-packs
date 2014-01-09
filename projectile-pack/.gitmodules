@@ -1,9 +1,0 @@
-[submodule "vendor/submodules/projectile"]
-	path = vendor/submodules/projectile
-	url = https://github.com/bbatsov/projectile.git
-[submodule "vendor/submodules/grizzl"]
-	path = vendor/submodules/grizzl
-	url = https://github.com/d11wtq/grizzl.git
-[submodule "vendor/submodules/helm"]
-	path = vendor/submodules/helm
-	url = https://github.com/emacs-helm/helm.git
