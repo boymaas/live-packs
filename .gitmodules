@@ -4,3 +4,6 @@
 [submodule "evilmode-pack"]
 	path = evilmode-pack
 	url = https://github.com/boymaas/live-packs.git
+[submodule "projectile-pack"]
+	path = projectile-pack
+	url = https://github.com/boymaas/projectile-pack.git
