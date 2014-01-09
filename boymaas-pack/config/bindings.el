@@ -50,6 +50,7 @@
 (define-key evil-normal-state-map ";pz" 'projectile-cache-current-file)
 (define-key evil-normal-state-map ";ps" 'projectile-switch-project)
 (define-key evil-normal-state-map ";pm" 'projectile-commander)
+(define-key evil-normal-state-map ";ph" 'helm-projectile)
 
 
 

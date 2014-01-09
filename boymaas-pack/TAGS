@@ -1,5 +1,5 @@
 
-(null),5456
+(null),5544
 (define-key evil-normal-state-map ";;" 'evil-buffer)evil-normal-state-map8,182
 (define-key evil-normal-state-map ";h" 'help)evil-normal-state-map9,235
 (define-key evil-normal-state-map ";x" 'smex)evil-normal-state-map10,281
@@ -38,26 +38,27 @@
 (define-key evil-normal-state-map ";pz" 'projectile-cache-current-file)evil-normal-state-map50,2548
 (define-key evil-normal-state-map ";ps" 'projectile-switch-project)evil-normal-state-map51,2620
 (define-key evil-normal-state-map ";pm" 'projectile-commander)evil-normal-state-map52,2688
-(define-key evil-normal-state-map ";ee" 'nrepl-eval-expression-at-point)evil-normal-state-map82,3535
-(define-key evil-normal-state-map ";eb" 'nrepl-eval-buffer)evil-normal-state-map83,3608
-(define-key evil-normal-state-map ";en" 'nrepl-eval-ns-form)evil-normal-state-map84,3668
-(define-key evil-visual-state-map ";er" 'nrepl-eval-region)evil-visual-state-map85,3729
-(define-key evil-normal-state-map ";em" 'nrepl-macroexpand-1)evil-normal-state-map86,3789
-(define-key evil-normal-state-map ";eM" 'nrepl-macroexpand-all)evil-normal-state-map87,3851
-(define-key evil-normal-state-map ";eg" 'nrepl-jump)evil-normal-state-map88,3915
-(define-key evil-normal-state-map ";eG" 'nrepl-jump-back)evil-normal-state-map89,3968
-(define-key evil-normal-state-map ";t" 'rspec-verify)evil-normal-state-map94,4117
-(define-key evil-normal-state-map ";T" 'rspec-verify-single)evil-normal-state-map95,4171
-(define-key evil-normal-state-map ";r" 'rspec-rerun)evil-normal-state-map96,4232
-(define-key evil-normal-state-map ";a" 'rspec-verify-all)evil-normal-state-map97,4285
-(define-key evil-normal-state-map ";gf" 'rinari-find-file-in-project)evil-normal-state-map100,4361
-(define-key evil-normal-state-map ";gc" 'rinari-find-controller)evil-normal-state-map101,4431
-(define-key evil-normal-state-map ";gv" 'rinari-find-view)evil-normal-state-map102,4496
-(define-key evil-normal-state-map ";gh" 'rinari-find-helper)evil-normal-state-map103,4555
-(define-key evil-normal-state-map ";gr" 'rinari-find-rspec)evil-normal-state-map104,4616
-(defun vim-like-esc (prompt)vim-like-esc113,4731
-(define-key key-translation-map (kbd "C-c C-c") 'vim-like-esc)key-translation-map124,5364
-(define-key evil-operator-state-map (kbd "C-c C-c") 'keyboard-quit)evil-operator-state-map127,5557
+(define-key evil-normal-state-map ";ph" 'helm-projectile)evil-normal-state-map53,2751
+(define-key evil-normal-state-map ";ee" 'nrepl-eval-expression-at-point)evil-normal-state-map83,3593
+(define-key evil-normal-state-map ";eb" 'nrepl-eval-buffer)evil-normal-state-map84,3666
+(define-key evil-normal-state-map ";en" 'nrepl-eval-ns-form)evil-normal-state-map85,3726
+(define-key evil-visual-state-map ";er" 'nrepl-eval-region)evil-visual-state-map86,3787
+(define-key evil-normal-state-map ";em" 'nrepl-macroexpand-1)evil-normal-state-map87,3847
+(define-key evil-normal-state-map ";eM" 'nrepl-macroexpand-all)evil-normal-state-map88,3909
+(define-key evil-normal-state-map ";eg" 'nrepl-jump)evil-normal-state-map89,3973
+(define-key evil-normal-state-map ";eG" 'nrepl-jump-back)evil-normal-state-map90,4026
+(define-key evil-normal-state-map ";t" 'rspec-verify)evil-normal-state-map95,4175
+(define-key evil-normal-state-map ";T" 'rspec-verify-single)evil-normal-state-map96,4229
+(define-key evil-normal-state-map ";r" 'rspec-rerun)evil-normal-state-map97,4290
+(define-key evil-normal-state-map ";a" 'rspec-verify-all)evil-normal-state-map98,4343
+(define-key evil-normal-state-map ";gf" 'rinari-find-file-in-project)evil-normal-state-map101,4419
+(define-key evil-normal-state-map ";gc" 'rinari-find-controller)evil-normal-state-map102,4489
+(define-key evil-normal-state-map ";gv" 'rinari-find-view)evil-normal-state-map103,4554
+(define-key evil-normal-state-map ";gh" 'rinari-find-helper)evil-normal-state-map104,4613
+(define-key evil-normal-state-map ";gr" 'rinari-find-rspec)evil-normal-state-map105,4674
+(defun vim-like-esc (prompt)vim-like-esc114,4789
+(define-key key-translation-map (kbd "C-c C-c") 'vim-like-esc)key-translation-map125,5422
+(define-key evil-operator-state-map (kbd "C-c C-c") 'keyboard-quit)evil-operator-state-map128,5615
 
 /Users/boymaas/.live-packs/boymaas-pack/config/bindings.el,0
 
