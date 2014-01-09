@@ -13,3 +13,6 @@
 [submodule "ruby-pack"]
 	path = ruby-pack
 	url = https://github.com/cap10morgan/ruby-pack.git
+[submodule "solarized-pack"]
+	path = solarized-pack
+	url = https://github.com/siancu/solarized-pack.git
