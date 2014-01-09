@@ -10,3 +10,6 @@
 [submodule "rails-pack"]
 	path = rails-pack
 	url = https://github.com/TrevorS/rails-pack.git
+[submodule "ruby-pack"]
+	path = ruby-pack
+	url = https://github.com/cap10morgan/ruby-pack.git
