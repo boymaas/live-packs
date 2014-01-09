@@ -1,0 +1,3 @@
+[submodule "ctags-pack"]
+	path = ctags-pack
+	url = https://github.com/cap10morgan/ctags-pack.git
