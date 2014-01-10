@@ -13,3 +13,6 @@
 [submodule "solarized-pack"]
 	path = solarized-pack
 	url = https://github.com/siancu/solarized-pack.git
+[submodule "evilmode-pack"]
+	path = evilmode-pack
+	url = https://github.com/siancu/evilmode-pack.git

@@ -52,16 +52,12 @@
 (define-key evil-normal-state-map ";pm" 'projectile-commander)
 (define-key evil-normal-state-map ";ph" 'helm-projectile)
 
-
-
-
 (fill-keymap evil-window-map
              "<left>"  'evil-window-left
              "<down>"  'evil-window-down
              "<up>"    'evil-window-up
              "<right>" 'evil-window-right
              )
-
 
 ;; Enabling flex matching on ido completions
 (setq ido-enable-flex-matching t)
