@@ -6,6 +6,7 @@
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 (live-load-config-file "emacs-nav.el")
+(live-load-config-file "sr-speedbar.el")
 
 ;; byte compile everything that needs to be compiled for
 ;; faster startup
