@@ -100,9 +100,18 @@
 (define-key evil-normal-state-map ";gh" 'rinari-find-helper)
 (define-key evil-normal-state-map ";gr" 'rinari-find-rspec)
 
+; ECB Conflicts
+(add-hook 'ecb-history-buffer-after-create-hook 'evil-emacs-state)
+(add-hook 'ecb-directories-buffer-after-create-hook 'evil-emacs-state)
+(add-hook 'ecb-methods-buffer-after-create-hook 'evil-emacs-state)
+(add-hook 'ecb-sources-buffer-after-create-hook 'evil-emacs-state)
 
 
-
+;; Windmove, move around with shift & cursor keys
+(global-set-key (kbd "C-x <up>") 'windmove-up)
+(global-set-key (kbd "C-x <down>") 'windmove-down)
+(global-set-key (kbd "C-x <right>") 'windmove-right)
+(global-set-key (kbd "C-x <left>") 'windmove-left)
 
 
 
@@ -118,10 +127,11 @@
    ;;((eq overriding-terminal-local-map evil-read-key-map) (keyboard-quit) (kbd ""))
    (t (kbd "C-g"))))
 
-(define-key key-translation-map (kbd "C-c C-c") 'vim-like-esc)
+;;(define-key key-translation-map (kbd "C-c C-c") 'vim-like-esc)
 ;; Works around the fact that Evil uses read-event directly when in operator state, which
 ;; doesn't use the key-translation-map.
-(define-key evil-operator-state-map (kbd "C-c C-c") 'keyboard-quit)
+;;(define-key evil-operator-state-map (kbd "C-c C-c") 'keyboard-quit)
+
 
 ;; Not sure what behavior this changes, but might as well set it, seeing the Elisp manual's
 ;; documentation of it.
