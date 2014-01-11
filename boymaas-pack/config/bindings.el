@@ -1,8 +1,41 @@
 ;; Place your bindings here.
 
+;; TODO: remove this to own config
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" .
+               "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+;; Global line number mode with padded
+;; space. Better for the eye.
+(global-linum-mode)
+(setq linum-format "%3d ")
+
+;; Ruby stuff
+
+;; TODO: now installed via package system. Make this independent of that
+(require 'flymake-ruby)
+(add-hook 'ruby-mode-hook 'flymake-ruby-load)
+
+;; Evil paste fix
+(evil-define-command bmaas-evil-paste-after
+  (count &optional register yank-handler)
+  :surpress-operator t
+  (interactive "P<x>")
+  (evil-open-below 1)
+  (evil-paste-after count register yank-handler)
+  (evil-force-normal-state)
+  (evil-previous-line))
+
+(define-key evil-normal-state-map "p" 'bmaas-evil-paste-after)
+
 ;; For example:
 ;;(define-key global-map (kbd "C-+") 'text-scale-increase)
 ;;(define-key global-map (kbd "C--") 'text-scale-decrease)
+
+;; Utils contain helpers to help
+;; with defining keys and such
 (require 'utils)
 
 (define-key evil-normal-state-map ";;" 'evil-buffer)
@@ -19,9 +52,16 @@
 
 (define-key evil-normal-state-map ";f" 'projectile-find-file)
 (define-key evil-normal-state-map ";F" 'projectile-find-file-other-window)
-(define-key evil-normal-state-map ";el" 'projectile-find-dir)
+(define-key evil-normal-state-map ";el" 'dired)
 
-(define-key evil-normal-state-map ";." 'projectile-toggle-between-implementation-and-test)
+(defun open-test-in-split-window ()
+  (interactive)
+  (delete-other-windows)
+  (split-window-right)
+  (projectile-toggle-between-implementation-and-test))
+
+(define-key evil-normal-state-map ";." 'open-test-in-split-window)
+
 
 ;; Projectile bindings
 (define-key evil-normal-state-map ";p4f" 'projectile-find-file-other-window)
