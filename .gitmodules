@@ -3,7 +3,7 @@
 	url = https://github.com/cap10morgan/ctags-pack.git
 [submodule "projectile-pack"]
 	path = projectile-pack
-	url = https://github.com/boymaas/projectile-pack.git
+	url = git@github.com/boymaas/projectile-pack.git
 [submodule "rails-pack"]
 	path = rails-pack
 	url = https://github.com/TrevorS/rails-pack.git
