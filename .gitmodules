@@ -16,3 +16,6 @@
 [submodule "evilmode-pack"]
 	path = evilmode-pack
 	url = https://github.com/siancu/evilmode-pack.git
+[submodule "boymaas-pack"]
+	path = boymaas-pack
+	url = git@github.com:boymaas/boymaas-pack.git
